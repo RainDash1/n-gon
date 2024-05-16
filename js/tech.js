@@ -9321,7 +9321,6 @@ const tech = {
         effect() {
             for (let i = 0; i < 100; i++) {
                 b.randomBot(m.pos, false)
-                bullet[bullet.length - 1].endCycle = simulation.cycle + 800 + 1000 * Math.random() //15 seconds
             }
         },
         remove() { }
