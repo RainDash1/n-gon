@@ -289,7 +289,7 @@ const b = {
         if (m.fieldMode === 6) b.fireCDscale *= 0.8
         if (tech.isFastTime) b.fireCDscale *= 0.666
         if (tech.isFireRateForGuns) b.fireCDscale *= Math.pow(0.76923, Math.max(0, b.inventory.length - 1))
-        if (tech.isFireMoveLock) b.fireCDscale *= 0.25
+        if (tech.isFireMoveLock) b.fireCDscale *= 1
     },
     fireAttributes(dir, rotate = true) {
         if (rotate) {
