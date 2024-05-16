@@ -369,6 +369,7 @@ const tech = {
         requires: "not skinned, ship mode, automatic",
         effect() {
             tech.isFireMoveLock = true;
+            b.fireCDscale *= 0.25
             b.setFireCD();
             b.setFireMethod();
             m.skin.strokeGap();
