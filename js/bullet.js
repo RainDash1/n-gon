@@ -4987,7 +4987,7 @@ const b = {
                                 this.force = Vector.mult(Vector.normalise(Vector.sub(this.position, mob[i].position)), this.mass * 0.02)
 
                                 if (tech.missileCount > 1) {
-                                    const countReduction = Math.pow(0.85, tech.missileCount)
+                                    const countReduction = Math.pow(1, tech.missileCount)
                                     const size = Math.sqrt(countReduction)
                                     const direction = { x: Math.cos(angle), y: Math.sin(angle) }
                                     const push = Vector.mult(Vector.perp(direction), 0.015 * countReduction / Math.sqrt(tech.missileCount))
